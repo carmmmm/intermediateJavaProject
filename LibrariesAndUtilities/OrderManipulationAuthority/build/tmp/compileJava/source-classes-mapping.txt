@@ -1,0 +1,16 @@
+com/amazon/ata/ordermanipulationauthority/OrderCondition.java
+ com.amazon.ata.ordermanipulationauthority.OrderCondition
+com/amazon/ata/ordermanipulationauthority/OrderResult.java
+ com.amazon.ata.ordermanipulationauthority.OrderResult
+ com.amazon.ata.ordermanipulationauthority.OrderResult$Builder
+com/amazon/ata/ordermanipulationauthority/OrderShipment.java
+ com.amazon.ata.ordermanipulationauthority.OrderShipment
+ com.amazon.ata.ordermanipulationauthority.OrderShipment$Builder
+ com.amazon.ata.ordermanipulationauthority.OrderShipment$ShipmentItem
+com/amazon/ata/ordermanipulationauthority/OrderResultItem.java
+ com.amazon.ata.ordermanipulationauthority.OrderResultItem
+ com.amazon.ata.ordermanipulationauthority.OrderResultItem$Builder
+com/amazon/ata/ordermanipulationauthority/OrderManipulationAuthority.java
+ com.amazon.ata.ordermanipulationauthority.OrderManipulationAuthority
+com/amazon/ata/ordermanipulationauthority/OrderResultItemDetail.java
+ com.amazon.ata.ordermanipulationauthority.OrderResultItemDetail

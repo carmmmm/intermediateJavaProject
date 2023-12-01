@@ -1,0 +1,85 @@
+@startuml
+
+'https://plantuml.com/sequence-diagram
+title [[https://tiny.amazon.com/5y9djn0o/SNSRevisited Delivering Our Promise CD]]
+
+
+class Shell #lightgrey{
+
+}
+class GetPromiseHistoryByOrderIdActivity {
+
+}
+
+class OrderDao {
+
+
+}
+
+interface ReadOnlyDao {
+
+}
+
+class PromiseDao {
+}
+
+class DeliveryPromiseServiceClient #lightgrey {
+
+}
+
+class OrderManipulationAuthorityClient #lightgrey {
+
+}
+
+class PromiseHistoryClient #lightgrey {
+
+}
+
+
+class Order {
+
+}
+
+class OrderItem {
+
+}
+
+class Promise {
+
+}
+
+
+class PromiseHistory {
+
+}
+
+
+class App #lightgrey{
+
+}
+
+
+
+
+'Relationships
+  OrderDao -- Order
+  OrderDao ..|> ReadOnlyDao
+  PromiseDao ..|> ReadOnlyDao
+  PromiseHistory -- Order
+  PromiseHistory -- Promise
+  OrderDao -- OrderItem
+  PromiseDao -- PromiseHistory
+  PromiseDao -- Promise
+  OrderManipulationAuthorityClient -- Order
+  DeliveryPromiseServiceClient -- OrderItem
+  GetPromiseHistoryByOrderIdActivity -- PromiseHistoryClient
+  OrderDao -- GetPromiseHistoryByOrderIdActivity
+  OrderManipulationAuthorityClient -- OrderDao
+  OrderManipulationAuthorityClient -- PromiseDao
+  DeliveryPromiseServiceClient -- PromiseDao
+  GetPromiseHistoryByOrderIdActivity -- PromiseDao
+  PromiseHistoryClient -- Shell
+
+
+
+@enduml
